@@ -21,7 +21,7 @@ cd regs-small-vits
 
 # 2) Create a fresh environment (example with venv)
 python3 -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate 
 
 # 3) Install dependencies
 pip install -r requirements.txt
@@ -32,8 +32,6 @@ pip install -r requirements.txt
 
 # 5) Open and run the notebook
 jupyter notebook main.ipynb
-# or, headless:
-jupyter nbconvert --to notebook --execute --inplace main.ipynb
 ```
 
 > Note: This repository’s main entry point is the **`main.ipynb`** notebook. There is no `main.py` in this repo at the moment.
