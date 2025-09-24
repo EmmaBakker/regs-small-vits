@@ -113,6 +113,23 @@ regs-small-vits/
 
 ---
 
+## Results (Summary)
+
+Our experiments reproduce and extend the findings of *Vision Transformers Need Registers*:
+
+- **Artifact tokens**: High-norm tokens appear even in smaller ViTs (e.g., DeiT-III Small).  
+- **Effect of registers**: Adding register tokens reduces these artifacts and produces smoother norm distributions.  
+- **Attention maps**: Registers make attention maps more interpretable, reducing dominance of single tokens.  
+- **Localization (LOST)**: Registers improve object localization (CorLoc) on VOC2007.  
+- **Classification accuracy**: Accuracy is stable; register count has minimal effect.  
+
+| Model              | Registers | Top-1 Acc (ImageNet-1k) | CorLoc (VOC2007) |
+|--------------------|-----------|--------------------------|------------------|
+| DeiT-III Small     | No        | 81.05%                  | 15.13%           |
+| DeiT-III Small     | Yes (4)   | 80.81%                  | 17.92%           |
+
+---
+
 ## Requirements and environment notes
 
 - This code assumes a GPU-enabled environment for most experiments.
