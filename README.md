@@ -34,7 +34,7 @@ pip install -r requirements.txt
 jupyter notebook main.ipynb
 ```
 
-> Note: This repository’s main entry point is the **`main.ipynb`** notebook. There is no `main.py` in this repo at the moment.
+> Note: This repository’s main entry point is the **`main.ipynb`** notebook.
 
 ---
 
